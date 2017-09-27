@@ -34,11 +34,11 @@ void Main::RenderWindow()
 		Settings::UI::Windows::Main::posX = (int)temp.x;
 		Settings::UI::Windows::Main::posY = (int)temp.y;
 		const char* tabs[] = {
-				"Aimbot",
-				"Triggerbot",
-				"Visuals",
-				"HvH",
-				"Misc",
+				XORSTR("Aimbot"),
+				XORSTR("Triggerbot"),
+				XORSTR("Visuals"),
+				XORSTR("HvH"),
+				XORSTR("Misc"),
 		};
 
 		for (int i = 0; i < IM_ARRAYSIZE(tabs); i++)
